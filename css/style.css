@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #1b3c59;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 header {
@@ -10,8 +18,8 @@ header {
 
 .container {
     height: 100%;
-    max-width: 1200px;
-    background-color: green;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -24,12 +32,45 @@ header {
     height: 100%;
     width: 20%;
     float: left;
-    background-color: red;
+}
+
+.header-left img {
+    height: 60px;
+    width: auto;
+    margin-top: 10px ;
 }
 
 .header-right {
     height: 100%;
     width: 60%;
     float: right;
-    background-color: blue;
+}
+
+.menu {
+    display: flex;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-item {
+    position:relative;
+}
+
+.dropdown-menu {
+    position:absolute;
+    left:0;
+    bottom:0;
+    transform: translateY(100%);
+    padding-top:15px;
+    display:none;
+}
+
+.dropdown-menu-item {
+    margin: 10px 0;
+}
+
+
+.dropdown-menu.active {
+    display: block;
 }
